@@ -73,9 +73,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.chatapp"
+    namespace "com.greenplay.chatapp"
     defaultConfig {
-        applicationId "com.chatapp"
+        applicationId "com.greenplay.chatapp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 2
