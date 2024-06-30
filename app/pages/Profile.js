@@ -108,8 +108,6 @@ const Profile = () => {
     }
   };
 
-
-
   return (
     <View style={style.container}>
       <TextInput
@@ -130,13 +128,13 @@ const Profile = () => {
         onChangeText={e => setPassword(e)}
       />
 
-      {!store.user&&!loading && (
+      {!store.user && !loading && (
         <Button onPress={() => handleSave()} mode="contained-tonal">
           {type}
         </Button>
       )}
       {!store.user && (
-        <Text style={{margin: 20}} onPress={handleFlickType}>
+        <Text style={style.msg} onPress={handleFlickType}>
           {type == 'Sign In'
             ? 'New Here? Sign Up'
             : 'Already have account? Sign In'}
